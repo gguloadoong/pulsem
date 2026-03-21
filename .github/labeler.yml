@@ -1,0 +1,19 @@
+frontend:
+  - changed-files:
+      - any-glob-to-any-file: ['src/components/**', 'src/app/**', '*.css']
+
+config:
+  - changed-files:
+      - any-glob-to-any-file: ['*.config.*', 'tsconfig.json', 'package.json']
+
+documentation:
+  - changed-files:
+      - any-glob-to-any-file: ['**/*.md', '.project/**']
+
+data:
+  - changed-files:
+      - any-glob-to-any-file: ['src/data/**']
+
+ci:
+  - changed-files:
+      - any-glob-to-any-file: ['.github/**']

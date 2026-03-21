@@ -1,0 +1,14 @@
+[config]
+model = "gemini/gemini-2.5-flash"
+
+[pr_description]
+publish_labels = true
+add_original_user_description = true
+
+[pr_reviewer]
+enable_review_labels_security = true
+enable_review_labels_effort = true
+extra_instructions = "리뷰는 한국어로 작성해주세요. 보안 이슈를 최우선으로 확인하세요."
+
+[pr_code_suggestions]
+extra_instructions = "제안은 한국어로 작성해주세요."
