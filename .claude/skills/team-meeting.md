@@ -1,3 +1,12 @@
+---
+title: team-meeting
+description: 트러블슈팅 및 의사결정 회의 — 안건에 대해 팀원 전원 발언
+triggers:
+  - "team-meeting"
+  - "팀 미팅"
+  - "회의"
+---
+
 # Skill: team-meeting — 트러블슈팅 및 의사결정 회의
 
 **트리거:** 기술적 결정, 블로커 해결, 방향성 논의 필요 시

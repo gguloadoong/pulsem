@@ -1,3 +1,12 @@
+---
+title: sprint
+description: 스프린트 플래닝 — 백로그 기반 태스크 분배 및 목표 설정
+triggers:
+  - "sprint"
+  - "스프린트"
+  - "스프린트 플래닝"
+---
+
 # Skill: sprint — 스프린트 플래닝
 
 **트리거:** 새 스프린트 시작 시

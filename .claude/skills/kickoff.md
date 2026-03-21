@@ -1,3 +1,12 @@
+---
+title: kickoff
+description: 프로젝트 킥오프 미팅 — 각 에이전트가 담당 문서를 작성하며 서비스 방향을 정립
+triggers:
+  - "kickoff"
+  - "킥오프"
+  - "프로젝트 시작"
+---
+
 # Skill: kickoff — 프로젝트 킥오프 미팅
 
 **트리거:** 프로젝트 시작 시 또는 "kickoff 스킬 실행해" 입력 시
