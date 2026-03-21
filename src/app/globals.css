@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg: #0a0a0f;
+  --color-surface: #12121a;
+  --color-surface-hover: #1a1a28;
+  --color-border: #1e1e2e;
+  --color-primary: #6c5ce7;
+  --color-primary-light: #a29bfe;
+  --color-accent: #00cec9;
+  --color-accent-warm: #fdcb6e;
+  --color-danger: #ff6b6b;
+  --color-success: #00b894;
+  --color-text: #e8e8f0;
+  --color-text-muted: #8888a0;
+  --color-text-dim: #555570;
+  --color-up: #00b894;
+  --color-down: #ff6b6b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 3px;
+}
+
+/* Glow effects */
+.glow-primary {
+  box-shadow: 0 0 20px rgba(108, 92, 231, 0.3);
+}
+.glow-accent {
+  box-shadow: 0 0 20px rgba(0, 206, 201, 0.3);
+}
+.glow-success {
+  box-shadow: 0 0 15px rgba(0, 184, 148, 0.2);
+}
+.glow-danger {
+  box-shadow: 0 0 15px rgba(255, 107, 107, 0.2);
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(18, 18, 26, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--color-border);
+}
+
+/* Pulse animation for live indicators */
+@keyframes pulse-live {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+.animate-pulse-live {
+  animation: pulse-live 2s ease-in-out infinite;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-primary-light), var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Number ticker animation */
+@keyframes slide-up {
+  from { transform: translateY(100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.animate-slide-up {
+  animation: slide-up 0.3s ease-out;
+}
